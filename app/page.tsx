@@ -1,5 +1,5 @@
 import { getPortfolioRepos } from "@/lib/github";
-import { LockKeyhole, Building2 } from "lucide-react";
+import { Building2 } from "lucide-react";
 
 export default async function Home() {
   const projects = await getPortfolioRepos();
@@ -67,12 +67,6 @@ export default async function Home() {
                   <>
                     <div className="flex items-center justify-between gap-2">
                       <div className="flex items-center gap-2 min-w-0">
-                        {project.isPrivate && (
-                          <LockKeyhole
-                            className="h-4 w-4 shrink-0 text-zinc-400 dark:text-zinc-500"
-                            aria-label="Private"
-                          />
-                        )}
                         <h3 className="font-semibold text-zinc-900 group-hover:text-zinc-600 dark:text-zinc-50 dark:group-hover:text-zinc-300 truncate">
                           {project.title}
                         </h3>
@@ -97,30 +91,42 @@ export default async function Home() {
                         </span>
                       ))}
                     </div>
+                    <div className="mt-auto pt-5 flex flex-wrap gap-2">
+                      {project.siteUrl && (
+                        <a
+                          href={project.siteUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-block rounded-full border border-zinc-300 px-3 py-1.5 text-xs font-medium text-zinc-700 transition-colors hover:bg-zinc-100 dark:border-zinc-700 dark:text-zinc-300 dark:hover:bg-zinc-800"
+                        >
+                          Public site
+                        </a>
+                      )}
+
+                      {project.repoUrl ? (
+                        <a
+                          href={project.repoUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-block rounded-full bg-zinc-900 px-3 py-1.5 text-xs font-medium text-white transition-colors hover:bg-zinc-700 dark:bg-zinc-50 dark:text-zinc-900 dark:hover:bg-zinc-200"
+                        >
+                          View repo
+                        </a>
+                      ) : (
+                        <span className="inline-block rounded-full bg-zinc-200 px-3 py-1.5 text-xs font-medium text-zinc-500 dark:bg-zinc-800 dark:text-zinc-400">
+                          Private repo
+                        </span>
+                      )}
+                    </div>
                   </>
                 );
-
-                if (project.isPrivate || !project.href) {
-                  return (
-                    <article
-                      key={project.id}
-                      className="group rounded-xl border border-zinc-200 p-5 dark:border-zinc-800"
-                    >
-                      {cardContent}
-                    </article>
-                  );
-                }
-
                 return (
-                  <a
+                  <article
                     key={project.id}
-                    href={project.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="group rounded-xl border border-zinc-200 p-5 transition-colors hover:border-zinc-400 dark:border-zinc-800 dark:hover:border-zinc-600"
+                    className="group flex h-full flex-col rounded-xl border border-zinc-200 p-5 dark:border-zinc-800"
                   >
                     {cardContent}
-                  </a>
+                  </article>
                 );
               })}
             </div>

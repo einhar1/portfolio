@@ -3,6 +3,7 @@ type GitHubRepo = {
   name: string;
   full_name: string;
   html_url: string;
+  homepage: string | null;
   description: string | null;
   language: string | null;
   topics?: string[];
@@ -18,11 +19,29 @@ export type PortfolioRepo = {
   id: number;
   title: string;
   description: string;
-  href: string | null;
+  repoUrl: string | null;
+  siteUrl: string | null;
   tags: string[];
   isPrivate: boolean;
   org?: string;
 };
+
+function normalizeExternalUrl(value: string | null | undefined): string | null {
+  if (!value) {
+    return null;
+  }
+
+  const trimmed = value.trim();
+  if (!trimmed) {
+    return null;
+  }
+
+  if (/^https?:\/\//i.test(trimmed)) {
+    return trimmed;
+  }
+
+  return `https://${trimmed}`;
+}
 
 function parsePositiveInt(value: string | undefined, fallback: number): number {
   const parsed = Number.parseInt(value ?? "", 10);
@@ -183,7 +202,8 @@ function toPortfolioRepo(
     id: repo.id,
     title: repo.name,
     description: repo.description ?? "No description provided yet.",
-    href: repo.private ? null : repo.html_url,
+    repoUrl: repo.private ? null : repo.html_url,
+    siteUrl: normalizeExternalUrl(repo.homepage),
     tags: uniqueTags,
     isPrivate: repo.private,
     org: isOrgRepo ? owner : undefined,
