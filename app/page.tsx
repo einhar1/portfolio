@@ -160,12 +160,12 @@ export default async function Home() {
           </a>
           <div>
             <a
-              href="https://github.com/einhar1"
+              href="https://www.linkedin.com/in/einar-harri/"
               target="_blank"
               rel="noopener noreferrer"
               className="mt-3 inline-block rounded-full border border-zinc-300 px-5 py-2.5 text-sm font-medium text-zinc-700 transition-colors hover:bg-zinc-100 dark:border-zinc-700 dark:text-zinc-300 dark:hover:bg-zinc-800"
             >
-              View my GitHub
+              Connect with me on LinkedIn
             </a>
           </div>
         </div>
