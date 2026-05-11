@@ -52,10 +52,10 @@ jobs:
       - name: Build with Next.js
         run: pnpm build
         env:
-          GITHUB_USERNAME: ${{ secrets.PORTFOLIO_GITHUB_USERNAME }}
-          GITHUB_PINNED_REPOS: ${{ secrets.PORTFOLIO_GITHUB_PINNED_REPOS }}
+          GITHUB_USERNAME: ${{ vars.PORTFOLIO_GITHUB_USERNAME }}
+          GITHUB_PINNED_REPOS: ${{ vars.PORTFOLIO_GITHUB_PINNED_REPOS }}
           GITHUB_OWNER_TOKENS: ${{ secrets.PORTFOLIO_GITHUB_OWNER_TOKENS }}
-          GITHUB_INCLUDE_PRIVATE_REPOS: ${{ secrets.PORTFOLIO_GITHUB_INCLUDE_PRIVATE_REPOS }}
+          GITHUB_INCLUDE_PRIVATE_REPOS: ${{ vars.PORTFOLIO_GITHUB_INCLUDE_PRIVATE_REPOS }}
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
