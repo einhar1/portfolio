@@ -1,36 +1,44 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfolio
 
-## Getting Started
+Personal portfolio site built with Next.js and deployed to GitHub Pages.
 
-First, run the development server:
+## Tech Stack
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Next.js 16 (App Router)
+- React 19
+- TypeScript
+- Tailwind CSS 4
+- pnpm
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Local Development
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Install dependencies
+   - `pnpm install`
+2. Start the dev server
+   - `pnpm dev`
+3. Open `http://localhost:3000`
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Available Scripts
 
-## Learn More
+- `pnpm dev` — start development server
+- `pnpm build` — production build
+- `pnpm start` — run production build locally
+- `pnpm lint` — run ESLint
+- `pnpm format` — run Prettier on the repo
 
-To learn more about Next.js, take a look at the following resources:
+## GitHub API Configuration
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+This project can fetch and show pinned repositories using environment variables:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- `GITHUB_USERNAME`
+- `GITHUB_PINNED_REPOS` (comma-separated, e.g. `owner/repo,owner/repo`)
+- `GITHUB_TOKEN` (optional)
+- `GITHUB_OWNER_TOKENS` (optional, format: `owner=token;owner=token`)
+- `GITHUB_INCLUDE_PRIVATE_REPOS` (`true`/`false`, optional)
+- `GITHUB_MAX_TOPICS_PER_REPO` (optional, default: `3`)
 
-## Deploy on Vercel
+For GitHub Pages deployments in this repo, these are supplied through repository variables/secrets in the workflow.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Deployment
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Deployments run through GitHub Actions using `.github/workflows/deploy.yml` and publish the static output to GitHub Pages.
