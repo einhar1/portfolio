@@ -44,9 +44,14 @@ export default async function Home() {
             About
           </h2>
           <p className="mt-4 text-zinc-600 leading-7 dark:text-zinc-400">
-            Write a few sentences about yourself here — your background,
-            interests, and what drives you as a developer. This section helps
-            visitors get to know you beyond your code.
+            I&apos;m a developer who enjoys building practical, user-focused web
+            products and bringing ideas from concept to launch. My work spans
+            everything from interactive projects like driVR and WikiQuest to
+            larger organization-driven platforms such as Armada and
+            Medieteknik.com. I like combining clean UI, solid architecture,
+            and thoughtful developer experience to create products that are both
+            useful and maintainable. I&apos;m especially motivated by projects that
+            solve real problems and improve everyday workflows.
           </p>
         </div>
       </section>
@@ -61,22 +66,19 @@ export default async function Home() {
             Projects
           </h2>
           {projects.length > 0 ? (
-            <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="mt-8 grid gap-6 grid-cols-[repeat(auto-fit,minmax(18rem,1fr))]">
               {projects.map((project) => {
                 const cardContent = (
                   <>
-                    <div className="flex items-center justify-between gap-2">
-                      <div className="flex items-center gap-2 min-w-0">
+                    <div className="flex items-center gap-2 min-w-0">
+                      {project.org && (
+                        <Building2 className="h-4 w-4 shrink-0 text-zinc-500 dark:text-zinc-400" />
+                      )}
+                      <div className="min-w-0">
                         <h3 className="font-semibold text-zinc-900 group-hover:text-zinc-600 dark:text-zinc-50 dark:group-hover:text-zinc-300 truncate">
                           {project.title}
                         </h3>
                       </div>
-                      {project.org && (
-                        <span className="shrink-0 flex items-center gap-1 rounded-full bg-blue-100 px-2.5 py-0.5 text-xs font-medium text-blue-700 dark:bg-blue-900 dark:text-blue-200">
-                          <Building2 className="h-3 w-3" />
-                          {project.org}
-                        </span>
-                      )}
                     </div>
                     <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
                       {project.description}
