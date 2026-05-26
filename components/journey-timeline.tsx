@@ -69,15 +69,15 @@ const timelineData = [
                     <CardContent>
                         <ul className="space-y-3">
                             <li className={bulletClassName}>
-                                <span className="mt-2 h-1.5 w-1.5 rounded-full bg-emerald-500" />
+                                <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-500" />
                                 <p>Built my first website in plain HTML</p>
                             </li>
                             <li className={bulletClassName}>
-                                <span className="mt-2 h-1.5 w-1.5 rounded-full bg-emerald-500" />
+                                <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-500" />
                                 <p>Created a Chrome extension for Swedish dictionary lookups</p>
                             </li>
                             <li className={bulletClassName}>
-                                <span className="mt-2 h-1.5 w-1.5 rounded-full bg-emerald-500" />
+                                <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-500" />
                                 <p>Built a library management system</p>
                             </li>
                         </ul>
@@ -106,20 +106,20 @@ const timelineData = [
                 <CardContent>
                     <div className="space-y-3">
                         <div className={bulletClassName}>
-                            <span className="mt-2 h-1.5 w-1.5 rounded-full bg-amber-500" />
+                            <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-amber-500" />
                             <p>
                                 Started the KTH degree programme in Media Technology and began working with more modern web tooling.
                             </p>
                         </div>
                         <div className={bulletClassName}>
-                            <span className="mt-2 h-1.5 w-1.5 rounded-full bg-amber-500" />
+                            <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-amber-500" />
                             <p>
                                 Built my first React website,{" "}
                                 <a href="#projects" className="font-medium text-foreground underline-offset-4 hover:underline">WikiQuest</a>.
                             </p>
                         </div>
                         <div className={bulletClassName}>
-                            <span className="mt-2 h-1.5 w-1.5 rounded-full bg-amber-500" />
+                            <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-amber-500" />
                             <p>
                                 Also built{" "}
                                 <a href="#projects" className="font-medium text-foreground underline-offset-4 hover:underline">driVR</a>,
@@ -172,14 +172,14 @@ const timelineData = [
                     <CardContent>
                         <ul className="space-y-3">
                             <li className={bulletClassName}>
-                                <span className="mt-2 h-1.5 w-1.5 rounded-full bg-cyan-500" />
+                                <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-cyan-500" />
                                 <p>
                                     Website:{" "}
                                     <a href="#projects" className="font-medium text-foreground underline-offset-4 hover:underline">medieteknik.com</a>
                                 </p>
                             </li>
                             <li className={bulletClassName}>
-                                <span className="mt-2 h-1.5 w-1.5 rounded-full bg-cyan-500" />
+                                <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-cyan-500" />
                                 <p>Worked on real organizational needs, not just isolated side projects.</p>
                             </li>
                         </ul>
@@ -208,14 +208,14 @@ const timelineData = [
                 <CardContent>
                     <div className="space-y-3">
                         <div className={bulletClassName}>
-                            <span className="mt-2 h-1.5 w-1.5 rounded-full bg-sky-500" />
+                            <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-sky-500" />
                             <p>
                                 Keep building web products that combine thoughtful UX, strong engineering,
                                 and clear product direction.
                             </p>
                         </div>
                         <div className={bulletClassName}>
-                            <span className="mt-2 h-1.5 w-1.5 rounded-full bg-sky-500" />
+                            <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-sky-500" />
                             <p>
                                 Continue growing both technically and in leadership through larger,
                                 more ambitious projects.
