@@ -67,7 +67,7 @@ export function Header() {
                             <SheetHeader>
                                 <SheetTitle>Navigate</SheetTitle>
                                 <SheetDescription>
-                                    Jump to the main sections of the portfolio.
+                                    Choose a section.
                                 </SheetDescription>
                             </SheetHeader>
                             <div className="flex flex-col gap-2 px-4 pb-6">

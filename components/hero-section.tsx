@@ -33,14 +33,15 @@ export function HeroSection() {
                 </p>
 
                 <TextGenerateEffect
-                    words="I build practical, user-focused web experiences."
+                    words="I build web products that solve real problems."
                     className="mt-4 max-w-4xl text-4xl leading-tight sm:text-5xl md:text-6xl"
                 />
 
                 <p className="mt-6 max-w-2xl text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-                    I enjoy taking ideas from concept to launch, combining clean UI, solid
-                    architecture, and thoughtful developer experience to create products
-                    that are useful, memorable, and maintainable.
+                    I&apos;m a Media Technology student at KTH working across frontend and
+                    full-stack development. I like taking projects from the first idea to
+                    deployment, and I&apos;m especially interested in DevOps and the systems
+                    that make software easier to ship and maintain.
                 </p>
 
                 <div className="mt-8 flex flex-wrap gap-4">

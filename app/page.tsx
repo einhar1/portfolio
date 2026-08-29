@@ -31,24 +31,23 @@ export default async function Home() {
               About
             </p>
             <h2 className="mt-4 text-3xl font-bold tracking-tight text-foreground md:text-4xl">
-              A product-minded developer with a soft spot for polished web experiences.
+              Web development from the first sketch to deployment.
             </h2>
           </div>
 
           <div className="grid gap-6 md:grid-cols-[1.35fr_0.65fr]">
             <Card className="rounded-3xl border-border/80 bg-card/90 shadow-lg backdrop-blur-sm">
               <CardHeader>
-                <CardTitle>What I enjoy building</CardTitle>
+                <CardTitle>What I build</CardTitle>
                 <CardDescription>
-                  Websites and web platforms that feel clear, useful, and built to last.
+                  Websites and tools for people and organizations.
                 </CardDescription>
               </CardHeader>
               <CardContent className="text-sm leading-7 text-muted-foreground">
-                I enjoy bringing ideas from concept to launch. My work spans everything
-                from interactive projects like driVR and WikiQuest to larger
-                organization-driven platforms such as Armada and Medieteknik.com. I care
-                about clean UI, solid architecture, and a developer experience that makes
-                products easier to evolve over time.
+                I&apos;ve built interactive projects such as driVR and WikiQuest, and
+                worked on larger platforms for THS Armada and the Chapter for Media
+                Technology. I care about clear interfaces, sensible code, and solutions
+                that can be maintained after launch.
               </CardContent>
             </Card>
 
@@ -56,12 +55,13 @@ export default async function Home() {
               <CardHeader>
                 <CardTitle>Focus</CardTitle>
                 <CardDescription>
-                  Frontend and full-stack product work with maintainability in mind.
+                  Frontend, full-stack development, and DevOps.
                 </CardDescription>
               </CardHeader>
               <CardContent className="text-sm leading-7 text-muted-foreground">
-                I like interfaces that feel deliberate, systems that stay manageable as
-                they grow, and products that support real users and real workflows.
+                Most of my work is in frontend and full-stack development. I&apos;m also
+                particularly interested in DevOps, especially CI/CD, deployments, and
+                the infrastructure around web products.
               </CardContent>
             </Card>
           </div>
@@ -81,12 +81,11 @@ export default async function Home() {
               Projects
             </p>
             <h2 className="mt-4 text-3xl font-bold tracking-tight text-foreground md:text-4xl">
-              Selected work across experiments, products, and organization-driven platforms.
+              Projects I&apos;ve worked on.
             </h2>
             <p className="mt-4 text-base leading-7 text-muted-foreground">
-              A mix of public-facing websites, internal systems, and interactive side
-              projects. The goal is usually the same: make something useful, clear, and
-              enjoyable to use.
+              Public websites, internal systems, and side projects. Some repositories are
+              private, but the live sites are linked where available.
             </p>
           </div>
           {projects.length > 0 ? (
@@ -167,17 +166,17 @@ export default async function Home() {
           <Card className="rounded-4xl border-border/80 bg-card/90 shadow-lg backdrop-blur-sm">
             <CardHeader>
               <CardTitle className="text-3xl md:text-4xl">
-                Interested in building something useful together?
+                Want to work together?
               </CardTitle>
               <CardDescription className="max-w-2xl text-base leading-7">
-                I&apos;m always happy to hear about ambitious product ideas, web platform
-                work, or opportunities where thoughtful UX and strong engineering both matter.
+                If you have a web project, a technical problem, or a role that could be a
+                good fit, feel free to get in touch.
               </CardDescription>
             </CardHeader>
             <CardContent>
               <div className="text-sm leading-7 text-muted-foreground">
-                Frontend and full-stack product work, website platforms, and design-minded
-                engineering collaborations are especially interesting to me.
+                I&apos;m most interested in frontend, full-stack, and DevOps work, especially
+                when I can follow a project from development through deployment.
               </div>
             </CardContent>
             <CardFooter className="flex flex-wrap gap-3 justify-start bg-transparent">

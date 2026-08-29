@@ -36,11 +36,11 @@ export function Timeline({ data }: { data: TimelineEntry[] }) {
         >
             <div className="mx-auto max-w-7xl px-4 py-20 md:px-8 lg:px-10">
                 <h2 className="mb-4 max-w-4xl text-lg text-black dark:text-white md:text-4xl">
-                    Selected journey
+                    How I got here
                 </h2>
                 <p className="max-w-xl text-sm text-neutral-700 dark:text-neutral-300 md:text-base">
-                    A few milestones that show the kinds of products I&apos;ve built, the
-                    teams I&apos;ve worked with, and how my focus has evolved over time.
+                    A short timeline of the projects, studies, and roles that have shaped
+                    my work so far.
                 </p>
             </div>
 

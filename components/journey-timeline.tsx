@@ -29,15 +29,15 @@ const timelineData = [
                         <div className="rounded-2xl bg-pink-100 p-2 text-pink-700 dark:bg-pink-500/10 dark:text-pink-300">
                             <Puzzle className="h-5 w-5" />
                         </div>
-                        <CardTitle>First programming experience in Scratch</CardTitle>
+                        <CardTitle>Started programming with Scratch</CardTitle>
                     </div>
                     <CardDescription>
-                        My first hands-on experience with programming came through Scratch.
+                        My first introduction to programming.
                     </CardDescription>
                 </CardHeader>
                 <CardContent className="text-sm leading-7 text-muted-foreground">
-                    It was an early introduction to logic, interactivity, and the fun of
-                    making something on a computer behave exactly the way I wanted.
+                    Scratch taught me the basics of logic and interactivity, and showed me
+                    how much I enjoyed building things with code.
                 </CardContent>
             </Card>
         ),
@@ -52,19 +52,18 @@ const timelineData = [
                             <div className="rounded-2xl bg-blue-100 p-2 text-blue-700 dark:bg-blue-500/10 dark:text-blue-300">
                                 <School className="h-5 w-5" />
                             </div>
-                            <CardTitle>High school projects and first web experiments</CardTitle>
+                            <CardTitle>First web projects</CardTitle>
                         </div>
                         <CardDescription>
-                            In high school I built my first website in plain HTML, a Chrome
-                            extension, and a library management system. This was the period where
-                            programming started to feel like something I genuinely wanted to keep doing.
+                            In high school, programming went from an occasional interest to
+                            something I wanted to pursue seriously.
                         </CardDescription>
                     </CardHeader>
                 </Card>
 
                 <Card className="rounded-3xl border-border/80 bg-card/90 shadow-lg backdrop-blur-sm">
                     <CardHeader>
-                        <CardTitle>Projects from that period</CardTitle>
+                        <CardTitle>What I built</CardTitle>
                     </CardHeader>
                     <CardContent>
                         <ul className="space-y-3">
@@ -108,7 +107,8 @@ const timelineData = [
                         <div className={bulletClassName}>
                             <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-amber-500" />
                             <p>
-                                Started the KTH degree programme in Media Technology and began working with more modern web tooling.
+                                Started studying Media Technology at KTH and working with
+                                modern web tools.
                             </p>
                         </div>
                         <div className={bulletClassName}>
@@ -121,9 +121,9 @@ const timelineData = [
                         <div className={bulletClassName}>
                             <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-amber-500" />
                             <p>
-                                Also built{" "}
+                                Built{" "}
                                 <a href="#projects" className="font-medium text-foreground underline-offset-4 hover:underline">driVR</a>,
-                                continuing to explore more interactive web experiences.
+                                an interactive VR project.
                             </p>
                         </div>
                     </div>
@@ -141,11 +141,11 @@ const timelineData = [
                             <div className="rounded-2xl bg-violet-100 p-2 text-violet-700 dark:bg-violet-500/10 dark:text-violet-300">
                                 <BriefcaseBusiness className="h-5 w-5" />
                             </div>
-                            <CardTitle>Started working on THS Armada&apos;s web platform</CardTitle>
+                            <CardTitle>THS Armada&apos;s web platform</CardTitle>
                         </div>
                         <CardDescription>
-                            Joined the team working on THS Armada&apos;s website as a developer and later
-                            became Head of Web, contributing to both the public site and the CMS behind it.
+                            Joined as a developer and later became Head of Web, working on
+                            both the public website and its CMS.
                         </CardDescription>
                     </CardHeader>
                     <CardContent className="text-sm leading-7 text-muted-foreground">
@@ -165,8 +165,8 @@ const timelineData = [
                             <CardTitle>Webmaster for the Chapter for Media Technology</CardTitle>
                         </div>
                         <CardDescription>
-                            Also started working on the Chapter for Media Technology&apos;s website as the
-                            chapter&apos;s webmaster, helping maintain and improve the platform.
+                            Took responsibility for maintaining and improving the chapter&apos;s
+                            website.
                         </CardDescription>
                     </CardHeader>
                     <CardContent>
@@ -180,7 +180,7 @@ const timelineData = [
                             </li>
                             <li className={bulletClassName}>
                                 <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-cyan-500" />
-                                <p>Worked on real organizational needs, not just isolated side projects.</p>
+                                <p>Maintained the site around the chapter&apos;s day-to-day needs.</p>
                             </li>
                         </ul>
                     </CardContent>
@@ -198,9 +198,9 @@ const timelineData = [
                             <Rocket className="h-5 w-5" />
                         </div>
                         <div>
-                            <CardTitle>Looking ahead</CardTitle>
+                            <CardTitle>Current focus</CardTitle>
                             <CardDescription className="mt-1">
-                                Continuing to grow as a product-minded developer.
+                                Building broader engineering experience.
                             </CardDescription>
                         </div>
                     </div>
@@ -210,15 +210,15 @@ const timelineData = [
                         <div className={bulletClassName}>
                             <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-sky-500" />
                             <p>
-                                Keep building web products that combine thoughtful UX, strong engineering,
-                                and clear product direction.
+                                Keep building web products across frontend and full-stack
+                                development.
                             </p>
                         </div>
                         <div className={bulletClassName}>
                             <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-sky-500" />
                             <p>
-                                Continue growing both technically and in leadership through larger,
-                                more ambitious projects.
+                                Learn more about DevOps, CI/CD, deployment, and infrastructure
+                                while taking on more technical responsibility.
                             </p>
                         </div>
                     </div>

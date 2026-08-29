@@ -24,7 +24,8 @@ export const metadata: Metadata = {
     default: "Einar | Portfolio",
     template: "%s | Einar",
   },
-  description: "Personal portfolio showcasing my projects and skills.",
+  description:
+    "Einar Harri's portfolio: frontend, full-stack, and DevOps projects.",
 };
 
 export default function RootLayout({
