@@ -44,10 +44,9 @@ export default async function Home() {
                 </CardDescription>
               </CardHeader>
               <CardContent className="text-sm leading-7 text-muted-foreground">
-                I&apos;ve built interactive projects such as driVR and WikiQuest, and
-                worked on larger platforms for THS Armada and the Chapter for Media
-                Technology. I care about clear interfaces, sensible code, and solutions
-                that can be maintained after launch.
+                I work on web applications, from user-facing features to the systems
+                behind them. I care about how the different parts fit together, clear
+                code, and solutions that are easy to run and maintain over time.
               </CardContent>
             </Card>
 
@@ -55,13 +54,14 @@ export default async function Home() {
               <CardHeader>
                 <CardTitle>Focus</CardTitle>
                 <CardDescription>
-                  Frontend, full-stack development, and DevOps.
+                  Infrastructure, full-stack development, and DevOps.
                 </CardDescription>
               </CardHeader>
               <CardContent className="text-sm leading-7 text-muted-foreground">
-                Most of my work is in frontend and full-stack development. I&apos;m also
-                particularly interested in DevOps, especially CI/CD, deployments, and
-                the infrastructure around web products.
+                I want to understand how the different parts of a web application work
+                together, from APIs and databases to the infrastructure they run on.
+                I&apos;m interested in working with these systems, including CI/CD
+                and deployments.
               </CardContent>
             </Card>
           </div>
@@ -175,8 +175,9 @@ export default async function Home() {
             </CardHeader>
             <CardContent>
               <div className="text-sm leading-7 text-muted-foreground">
-                I&apos;m most interested in frontend, full-stack, and DevOps work, especially
-                when I can follow a project from development through deployment.
+                I&apos;m most interested in infrastructure, full-stack, and DevOps work,
+                especially when I can explore how systems interact and follow a project
+                from development through deployment.
               </div>
             </CardContent>
             <CardFooter className="flex flex-wrap gap-3 justify-start bg-transparent">

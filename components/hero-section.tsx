@@ -38,10 +38,10 @@ export function HeroSection() {
                 />
 
                 <p className="mt-6 max-w-2xl text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-                    I&apos;m a Media Technology student at KTH working across frontend and
-                    full-stack development. I like taking projects from the first idea to
-                    deployment, and I&apos;m especially interested in DevOps and the systems
-                    that make software easier to ship and maintain.
+                    I&apos;m a Media Technology student at KTH working with web development.
+                    I&apos;m especially interested in understanding and working with
+                    infrastructure, and how interfaces, APIs, databases, and deployment
+                    systems fit together. I like following projects from idea to deployment.
                 </p>
 
                 <div className="mt-8 flex flex-wrap gap-4">

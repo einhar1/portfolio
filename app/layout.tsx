@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     template: "%s | Einar",
   },
   description:
-    "Einar Harri's portfolio: frontend, full-stack, and DevOps projects.",
+    "Einar Harri's portfolio: web development, infrastructure, and DevOps.",
 };
 
 export default function RootLayout({
@@ -36,7 +36,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={cn("h-full", "antialiased", "scroll-smooth", geistSans.variable, geistMono.variable, "font-sans", dmSans.variable, notoSansHeading.variable)}
+      className={cn("dark", "h-full", "antialiased", "scroll-smooth", geistSans.variable, geistMono.variable, "font-sans", dmSans.variable, notoSansHeading.variable)}
     >
       <body className="min-h-full flex flex-col">
         <Header />

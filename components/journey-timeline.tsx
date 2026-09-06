@@ -210,8 +210,8 @@ const timelineData = [
                         <div className={bulletClassName}>
                             <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-sky-500" />
                             <p>
-                                Keep building web products across frontend and full-stack
-                                development.
+                                Keep building web products and deepen my understanding of how
+                                their different systems work together.
                             </p>
                         </div>
                         <div className={bulletClassName}>
